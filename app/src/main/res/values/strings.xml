@@ -1,3 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Final_Project</string>
+    <string name="app_name">NASA Day</string>
+    <string name="info_main">There is menu button On Top left corner to open drawer.You can click on picture to see more details. You can slide the card to right side and delete any item</string>
+    <string name="info_fav">There is back button On Top left corner to go back. You can click on any picture to see more details. These are all your favourites item</string>
+    <string name="info_search">There is back button On Top left corner to go back. You can select date and press search button for picture of that day. You can click on picture to see more details</string>
+    <string name="info_details">There is back button On Top left corner to go back. You can see details on this screen. you can light on heart sign to add picture in your favourite list</string>
+    <string name="add_to_favourite">Add to Favourite</string>
+    <string name="remove_from_favourite">Remove from Favourite</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="favourites">Favourites</string>
+    <string name="search_day">Search Day</string>
+    <string name="enter_date_for_search">Enter date for search</string>
+    <string name="select_date">Select Date</string>
+    <string name="search">Search</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="are_you_sure">Are You sure you want to exit app?</string>
+    <string name="share_via">Share with friends via </string>
+    <string name="download_it_from_play_store">Download it From play store</string>
+    <string name="something_went_wrong">Something went wrong. Try again...</string>
+    <string name="deleted">Deleted</string>
+    <string name="exit_app">Exit</string>
+    <string name="Share">Share</string>
 </resources>

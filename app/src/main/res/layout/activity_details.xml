@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:padding="4dp"
+            android:layout_marginStart="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="45dp"
+            android:layout_toStartOf="@+id/favourite"
+            android:layout_toEndOf="@+id/back"
+            android:fontFamily="@font/dancing_script_bold"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/help"
+            android:layout_marginEnd="15dp"
+            android:padding="4dp"
+            android:src="@drawable/heart" />
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/info"
+            android:padding="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Google is redefining mobile with artificial intelligence"
+                    android:textColor="@color/black"
+                    android:maxLines="3"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_placeholder"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/explanation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/lora"
+                    android:textColor="@color/content_color"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/lora"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Owen"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/sub_title_color"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

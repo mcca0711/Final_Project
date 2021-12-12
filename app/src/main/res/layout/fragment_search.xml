@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/category_color"
+        android:textSize="14sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_border_bg"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:hint="@string/enter_date_for_search"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/search"
+        android:layout_width="170dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/search"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"/>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:id="@+id/search_item"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <LinearLayout
+            android:layout_toStartOf="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Google is redefining mobile with artificial intelligence"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owen"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/gray"
+                android:maxLines="2"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_placeholder" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

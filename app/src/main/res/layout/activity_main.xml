@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:background="@color/bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Final_Project!!!!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/tollbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/menu"
+                android:padding="4dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/menu"
+                android:fontFamily="@font/dancing_script_bold"
+                android:layout_toStartOf="@+id/help"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/info"
+                android:padding="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="15dp"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tollbar"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:id="@+id/no_search_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Search History Found"
+            android:textColor="@color/gray" />
+
+        <ImageView
+            android:id="@+id/search_float"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20sp"
+            android:background="@drawable/white_circle"
+            android:elevation="10dp"
+            android:padding="14dp"
+            android:src="@drawable/ic_baseline_search_24" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navi"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        app:menu="@menu/my_menu"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/drawer_header" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

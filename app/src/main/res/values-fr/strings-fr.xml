@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NASA Day</string>
+    <string name="info_main">Il y a un bouton de menu dans le coin supérieur gauche pour ouvrir le tiroir. Vous pouvez cliquer sur l\'image pour voir plus de détails. Vous pouvez faire glisser la carte vers la droite et supprimer n\'importe quel élément</string>
+    <string name="info_fav">Il y a un bouton de retour dans le coin supérieur gauche pour revenir en arrière. Vous pouvez cliquer sur n\'importe quelle image pour voir plus de détails. Ce sont tous vos articles préférés</string>
+    <string name="info_search">Il y a un bouton de retour dans le coin supérieur gauche pour revenir en arrière. Vous pouvez sélectionner la date et appuyer sur le bouton de recherche pour l\'image de ce jour. Vous pouvez cliquer sur l\'image pour voir plus de détails Ope</string>
+    <string name="info_details">Il y a un bouton de retour dans le coin supérieur gauche pour revenir en arrière. Vous pouvez voir les détails sur cet écran. vous pouvez allumer le signe du coeur pour ajouter une image dans votre liste de favoris</string>
+    <string name="add_to_favourite">Ajouter aux favoris</string>
+    <string name="remove_from_favourite">Supprimer des favoris</string>
+    <string name="please_wait">S\'il vous plaît, attendez...</string>
+    <string name="favourites">Favoris</string>
+    <string name="search_day">Jour de recherche</string>
+    <string name="enter_date_for_search">Entrer la date de recherche</string>
+    <string name="select_date">Sélectionner une date</string>
+    <string name="search">Chercher</string>
+    <string name="ok">d\'accord</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="cancel">Annuler</string>
+    <string name="are_you_sure">Êtes-vous sûr de vouloir quitter l\'application?</string>
+    <string name="share_via">Partagez avec vos amis via </string>
+    <string name="download_it_from_play_store">Téléchargez-le sur le Play Store</string>
+    <string name="something_went_wrong">Quelque chose s\'est mal passé. Essayer à nouveau...</string>
+    <string name="deleted">Supprimé</string>
+    <string name="exit_app">Sortir</string>
+    <string name="Share">Partager</string>
+</resources>
