@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.14427083333333332" />
         <entry key="..\:/Users/mjlm0/AndroidStudioProjects/Final_Project/app/src/main/res/drawable-v24/ic_baseline_search_24.xml" value="0.22685185185185186" />
         <entry key="..\:/Users/mjlm0/AndroidStudioProjects/Final_Project/app/src/main/res/drawable-v24/language_border_bg.xml" value="0.22685185185185186" />
         <entry key="..\:/Users/mjlm0/AndroidStudioProjects/Final_Project/app/src/main/res/drawable/btn_bg.xml" value="0.2324074074074074" />
@@ -19,6 +20,20 @@
         <entry key="..\:/Users/mjlm0/AndroidStudioProjects/Final_Project/app/src/main/res/layout/fragment_search.xml" value="0.1634963768115942" />
         <entry key="..\:/Users/mjlm0/AndroidStudioProjects/Final_Project/app/src/main/res/layout/my_menu.xml" value="0.1634963768115942" />
         <entry key="..\:/Users/mjlm0/AndroidStudioProjects/Final_Project/app/src/main/res/layout/news_item.xml" value="0.1634963768115942" />
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_search_24.xml" value="0.14791666666666667" />
+        <entry key="app/src/main/res/drawable/language_border_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/font/abhaya_libre_semibold.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/font/crimson_text.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/font/dancing_script_bold.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/font/days_one.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/font/lora.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/font/montserrat_bold.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/font/signika_negative_bold.xml" value="0.16197916666666667" />
+        <entry key="app/src/main/res/layout/activity_favorites.xml" value="0.13177083333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11770833333333333" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.13177083333333334" />
+        <entry key="app/src/main/res/layout/news_item.xml" value="0.13177083333333334" />
+        <entry key="app/src/main/res/menu/my_menu.xml" value="0.11770833333333333" />
       </map>
     </option>
   </component>
