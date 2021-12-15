@@ -40,15 +40,15 @@ public class FavouriteAdapter extends ArrayAdapter<NasaModel> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
 
-        View rowView = LayoutInflater.from(context).inflate(R.layout.favorite_item, parent,true);
+        View rowView = LayoutInflater.from(context).inflate(R.layout.favorite_item, parent,false);
 
         NasaModel model = data.get(position);
 
-        ImageView image = convertView.findViewById(R.id.image);
-        TextView title = convertView.findViewById(R.id.title);
-        TextView date = convertView.findViewById(R.id.date);
-        TextView explanation = convertView.findViewById(R.id.explanation);
-        LinearLayout root = convertView.findViewById(R.id.root);
+        ImageView image = rowView.findViewById(R.id.image);
+        TextView title = rowView.findViewById(R.id.title);
+        TextView date = rowView.findViewById(R.id.date);
+        TextView explanation = rowView.findViewById(R.id.explanation);
+        LinearLayout root = rowView.findViewById(R.id.root);
 
         Typeface typeface = ResourcesCompat.getFont(context,R.font.montserrat_bold);
 
@@ -58,7 +58,9 @@ public class FavouriteAdapter extends ArrayAdapter<NasaModel> {
         RequestOptions requestOptions = new RequestOptions();
         requestOptions.placeholder(R.drawable.image_placeholder);
         requestOptions.error(R.drawable.image_placeholder);
-        Glide.with(context).load(model.getUrl()).apply(requestOptions).into(image);
+        if (model.getUrl() != null){
+            Glide.with(context).load(model.getUrl()).apply(requestOptions).into(image);
+        }
 
         root.setOnClickListener(new View.OnClickListener() {
             @Override
