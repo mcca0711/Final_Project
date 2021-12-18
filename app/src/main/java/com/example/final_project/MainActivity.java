@@ -25,6 +25,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    /* start final project */
     private TextView no_search_history;
     private ImageView menu,search_float;
     private ListView listView;
