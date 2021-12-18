@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +37,7 @@ public class Favorites extends AppCompatActivity {
 
         init();
 
-        //when click on back image on xml onClick method runs and finish this activity
+        //when clicking on back image on xml onClick method runs out of this activity
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +45,7 @@ public class Favorites extends AppCompatActivity {
             }
         });
 
-        //when click on info image on xml onClick method runs
+        //when click on info image xml onClick method runs
         findViewById(R.id.help).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

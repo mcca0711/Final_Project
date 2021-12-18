@@ -18,10 +18,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.final_project.SQLiteDatabaseHelper;
-import com.example.final_project.NasaModel;
+
+import com.bumptech.glide.Glide;
+
 
 public class Details extends AppCompatActivity {
 

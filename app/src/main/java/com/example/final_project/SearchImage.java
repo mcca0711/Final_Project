@@ -38,7 +38,7 @@ public class SearchImage extends AppCompatActivity {
 
         init();
 
-        //when click on back image on xml onClick method runs and finish this activity
+        //when clicking on the back image the xml onClick method runs and finishes this activity
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +48,7 @@ public class SearchImage extends AppCompatActivity {
 
         loadFragment();
 
-        //when click on info image on xml onClick method runs and show alert dialogue of information about screen
+        //when clicking on info image the xml onClick method runs and shows alert dialogue of information about screen
         findViewById(R.id.help).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

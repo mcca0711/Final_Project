@@ -18,13 +18,13 @@ public class SharedPreferenceManager {
         editor = sharedPreferences.edit();
     }
 
-    //saving data in shared preference
+    //saving data in shared preferences
     public void setDate(String key){
         editor.putString(DATE,key);
         editor.commit();
     }
 
-    //fetching data from shared preference
+    //fetching data from shared preferences
     public String getDate(){
         return sharedPreferences.getString(DATE,null);
     }

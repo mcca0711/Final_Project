@@ -15,12 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.res.ResourcesCompat;
 
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.final_project.Details;
-import com.example.final_project.NasaModel;
-import com.example.final_project.R;
-import com.example.final_project.Utils;
 
 import java.util.List;
 

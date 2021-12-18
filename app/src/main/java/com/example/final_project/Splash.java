@@ -12,7 +12,7 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        //after 1800 milli seconds run method will runa and move to next screen
+        //after 1800 milli seconds the run method will run and move to next screen
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

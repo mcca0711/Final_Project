@@ -76,7 +76,7 @@ public class SearchFragment extends Fragment {
 
         init(view);
 
-        //when click on info image on xml onClick method runs and show date picker
+        //when clicking info image the xml onClick method runs and shows the date picker
         date.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,7 +106,7 @@ public class SearchFragment extends Fragment {
             }
         });
 
-        //when click on search button on xml onClick method runs and fetch data from api
+        //when clicking search button the xml onClick method runs and fetches data from api
         view.findViewById(R.id.search).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,7 +119,7 @@ public class SearchFragment extends Fragment {
             }
         });
 
-        //when you click on searched data this methods runs and move to details screen
+        //when you click on searched data this methods runs and moves to details screen
         search_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

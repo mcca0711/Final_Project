@@ -16,7 +16,7 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
     // Database Version
     private static final int DATABASE_VERSION = 1;
 
-    // Database Name
+    // Database Names
     private static final String DATABASE_NAME = "NasaDay";
 
     // Table Names
@@ -74,7 +74,7 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    //storing favourite data in SQLite Database
+    //storing favourites data in SQLite Database
     public void addToFavourites(NasaModel model){
         SQLiteDatabase database = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -88,21 +88,21 @@ public class SQLiteDatabaseHelper extends SQLiteOpenHelper {
         database.insert(TABLE_FAVOURITES,null,contentValues);
     }
 
-    //remove specific data from favourite by id
+    //remove specific data from favourites by id
     public void removeFromFavourite(String id){
         SQLiteDatabase database = this.getWritableDatabase();
         String[] arg = {id};
         database.delete(TABLE_FAVOURITES,KEY_ID+"=?",arg);
     }
 
-    //get all favourite data from database
+    //get all favourites data from database
     public Cursor getAllFavourites(){
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor data = database.rawQuery("SELECT * FROM "+TABLE_FAVOURITES,null);
         return data;
     }
 
-    //validating id is available is favourite table or not
+    //validating whether id is available in favourites table or not
     public boolean isFavourite(String id){
         SQLiteDatabase database = this.getWritableDatabase();
         Cursor cursor =  database.query(TABLE_FAVOURITES,new String[]{KEY_ID,DATE,EXPLANATION

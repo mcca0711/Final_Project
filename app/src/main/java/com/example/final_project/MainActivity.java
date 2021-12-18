@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         init();
 
-        //when click on menu image on xml onClick method runs and open drawer from left side.
+        //when clicking menu image on xml onClick method runs and opens drawer from left side.
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //when you click on any item of navigation drawer
+        //when you click on any item of navigation drawer-
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //when click on search image on xml onClick method runs and move to search screen
+        //when clicking search image on xml onClick method runs and moves to search screen
         search_float.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //when click on info image on xml onClick method runs and show alert dialogue of information about screen
+        //when clicking on info image on xml onClick method runs and shows alert dialogue of information about the screen
         findViewById(R.id.help).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(sharelink,getApplicationContext().getResources().getString(R.string.share_via)));
     }
 
-    //show exit dialogue and when user click yes then close the application
+    //show exit dialogue/ when user clicks yes then close the application
     private void exitDialogue(){
         final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setCancelable(false);
